@@ -16,16 +16,16 @@ def main():
     run_date = date.today().isoformat()
 
     # ⚠️ TEST AVEC UN SEUL VEHICULE (pour valider)
-    unit_id = 733655  # mets un ID réel
+    units_ids = 733655  # mets un ID réel
 
     payload = client.fetch_driver_behaviour(
-        unit_id=unit_id,
+        units_ids=units_ids,
         date_from=run_date,
         date_till=run_date,
     )
 
     out_dir = default_raw_dir(date.today())
-    path = save_raw_json(payload, out_dir, f"driver_behaviour_{unit_id}.json")
+    path = save_raw_json(payload, out_dir, f"driver_behaviour_{units_ids}.json")
 
     print(f"[OK] Driver behaviour saved to {path}")
 

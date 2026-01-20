@@ -19,8 +19,7 @@ from requests import Response
 @dataclass(frozen=True)
 class FleetmaticConfig:
     base_url: str
-    units_endpoint: str
-    unit_details_endpoint: str
+    driver_behaviour_endpoint: str
     api_token: str
     timeout_seconds: int = 30
     max_retries: int = 3
@@ -38,7 +37,7 @@ class FleetmaticClient:
 
     def _headers(self) -> Dict[str, str]:
         return {
-            "Authorization": f"Bearer {self.cfg.api_token}",
+            "key": self.cfg.api_token,
             "Accept": "application/json",
         }
 
@@ -48,13 +47,15 @@ class FleetmaticClient:
         date_from: str,
         date_till: str,
     ) -> Dict[str, Any]:
+
         url = (
             self.cfg.base_url.rstrip("/")
-            + "/driver_behaviour/report_units.json"
+            + "/"
+            + self.cfg.driver_behaviour_endpoint.lstrip("/")
         )
 
         params = {
-            "units_ids": units_ids,
+            "units_ids": units_ids,   # ⚠️ aligné avec Postman
             "date_from": date_from,
             "date_till": date_till,
         }
@@ -100,21 +101,6 @@ class FleetmaticClient:
             f"Fleetmatic API request failed after retries: {last_exc}"
         ) from last_exc
 
-    def fetch_units(self) -> Dict[str, Any]:
-        url = self.cfg.base_url.rstrip("/") + "/" + self.cfg.units_endpoint.lstrip("/")
-        resp = self._request_with_retries("GET", url)
-        return resp.json()
-
-    def fetch_unit_details(
-        self,
-        unit_id: int,
-        params: Optional[Dict[str, Any]] = None,
-    ) -> Dict[str, Any]:
-        endpoint = self.cfg.unit_details_endpoint.format(unit_id=unit_id)
-        url = self.cfg.base_url.rstrip("/") + "/" + endpoint.lstrip("/")
-        resp = self._request_with_retries("GET", url, params=params)
-        return resp.json()
-
 
 # =========================
 # UTILITAIRES
@@ -137,23 +123,21 @@ def default_raw_dir(run_date: date) -> str:
 def load_cfg_from_env() -> FleetmaticConfig:
     base_url = os.environ.get("FLEETMATIC_BASE_URL", "").strip()
     token = os.environ.get("FLEETMATIC_API_TOKEN", "").strip()
-    endpoint = os.environ.get("FLEETMATIC_DRIVER_BEHAVIOUR_ENDPOINT", "").strip()
-    units_endpoint = os.environ.get("FLEETMATIC_UNITS_ENDPOINT", "").strip()
-    details_endpoint = os.environ.get("FLEETMATIC_UNIT_DETAILS_ENDPOINT", "").strip()
+    endpoint = os.environ.get(
+        "FLEETMATIC_DRIVER_BEHAVIOUR_ENDPOINT", ""
+    ).strip()
 
-    if not all([base_url, token, units_endpoint, details_endpoint]):
+    if not base_url or not token or not endpoint:
         raise RuntimeError(
             "Missing env vars. Required:\n"
             "- FLEETMATIC_BASE_URL\n"
             "- FLEETMATIC_API_TOKEN\n"
-            "- FLEETMATIC_UNITS_ENDPOINT\n"
-            "- FLEETMATIC_UNIT_DETAILS_ENDPOINT"
+            "- FLEETMATIC_DRIVER_BEHAVIOUR_ENDPOINT"
         )
 
     return FleetmaticConfig(
         base_url=base_url,
-        units_endpoint=units_endpoint,
-        unit_details_endpoint=details_endpoint,
+        driver_behaviour_endpoint=endpoint,
         api_token=token,
         timeout_seconds=int(os.environ.get("FLEETMATIC_TIMEOUT_SECONDS", "30")),
         max_retries=int(os.environ.get("FLEETMATIC_MAX_RETRIES", "3")),
