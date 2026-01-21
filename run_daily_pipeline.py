@@ -17,7 +17,7 @@ def main():
     cfg = load_cfg_from_env()
     client = FleetmaticClient(cfg)
 
-    run_date = date.today().isoformat()
+    run_date = date.today()
 
     # ⚠️ TEST AVEC UN SEUL VEHICULE (pour valider)
     units_ids = 733655  # mets un ID réel

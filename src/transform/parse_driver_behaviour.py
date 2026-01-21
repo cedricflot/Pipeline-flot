@@ -17,11 +17,6 @@ def parse_driver_behaviour(
             raise RuntimeError(f"Invalid Fleetmatic payload:no 'data' key in {input_json_path}")
 
 
-        vehicles: List[Dict[str, Any]] = json.load(f)
-
-        if not vehicles:
-            raise RuntimeError(f"No vehicle data found in {input_json_path}")
-            "Cannot generate csv"
     rows = []
 
     for vehicle in payload.get("data", []):
@@ -32,7 +27,7 @@ def parse_driver_behaviour(
 
         row = {
             "vehicle_id": vehicle.get("unit_id"),
-            "date": run_date.format(),
+            "date": run_date.isoformat(),
 
             "distance_km": vehicle.get("distance_gps") or 0,
             "driving_duration_min": driving_duration / 60,
@@ -69,4 +64,4 @@ def parse_driver_behaviour(
     if output_path_csv.stat().st_size == 0:
         raise RuntimeError("CSV file is empty")
 
-return str(output_path_csv)
+    return str(output_path_csv)
