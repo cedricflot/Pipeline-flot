@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import date
 
+from src.models.risk_persistence import run_risk_persistence
 from src.models.isolation_forest import run_isolation_forest
 from src.transform.parse_driver_behaviour import parse_driver_behaviour
 from src.extract.fleetmatic_api import (
@@ -47,6 +48,15 @@ def main():
     )
 
     print(f"[OK] Daily anomalies saved to {anomalies_path}")
+
+    risk_report_path = run_risk_persistence(
+        daily_metrics_dir="data/analytics/anomalies_daily",
+        output_path=f"data/processed/risk_reports/{run_date}_risk_report.csv",
+        window_days=7,
+    )
+
+    print(f"[OK] Weekly risk report generated at {risk_report_path}")
+
     
 
 
