@@ -229,19 +229,19 @@
       "title": "88093WWCI01",
       "driven_user_ids": [],
       "overall": {
-        "grade": "C",
-        "score": 69.01
+        "grade": "B",
+        "score": 77.88
       },
       "effective_speed": {
         "grade": "A",
         "score": 100,
-        "distance": 13.416,
-        "duration": 2386
+        "distance": 41.763,
+        "duration": 7271
       },
       "excessive_idling": {
         "grade": "G",
-        "score": 98.49,
-        "duration": 2350
+        "score": 34.09,
+        "duration": 2479
       },
       "cruise_control": {
         "grade": null,
@@ -266,8 +266,8 @@
         "count": null
       },
       "harsh_cornering": {
-        "grade": "E",
-        "score": 36.21,
+        "grade": "B",
+        "score": 11.88,
         "count": 1
       },
       "green_rpm": {
@@ -282,9 +282,9 @@
         "distance": null,
         "duration": null
       },
-      "distance_gps": 13.416,
+      "distance_gps": 41.763,
       "distance_can": null,
-      "driving_duration": 2386,
+      "driving_duration": 7271,
       "excessive_idling_pto_duration": null,
       "fuel_avg_consumption": null,
       "fuel_avg_consumption_measure": "kWh/100km",
@@ -294,9 +294,9 @@
       "fuel_consumption_can": null,
       "excessive_idling_consumption_can": null,
       "pto_idle_fuel_consumption_can": null,
-      "stop_count": 4,
+      "stop_count": 5,
       "stop_duration": 45709,
-      "avg_speed": 20.24
+      "avg_speed": 20.68
     },
     {
       "unit_id": 821540,
@@ -304,18 +304,18 @@
       "driven_user_ids": [],
       "overall": {
         "grade": "B",
-        "score": 87.22
+        "score": 87.42
       },
       "effective_speed": {
         "grade": "A",
         "score": 100,
-        "distance": 55.022,
-        "duration": 11580
+        "distance": 61.93,
+        "duration": 13001
       },
       "excessive_idling": {
         "grade": "E",
-        "score": 16.74,
-        "duration": 1938
+        "score": 16.22,
+        "duration": 2109
       },
       "cruise_control": {
         "grade": null,
@@ -356,9 +356,9 @@
         "distance": null,
         "duration": null
       },
-      "distance_gps": 55.022,
+      "distance_gps": 61.93,
       "distance_can": null,
-      "driving_duration": 11580,
+      "driving_duration": 13001,
       "excessive_idling_pto_duration": null,
       "fuel_avg_consumption": null,
       "fuel_avg_consumption_measure": "kWh/100km",
@@ -368,9 +368,9 @@
       "fuel_consumption_can": null,
       "excessive_idling_consumption_can": null,
       "pto_idle_fuel_consumption_can": null,
-      "stop_count": 5,
+      "stop_count": 6,
       "stop_duration": 40761,
-      "avg_speed": 17.11
+      "avg_speed": 17.15
     },
     {
       "unit_id": 822292,
@@ -378,18 +378,18 @@
       "driven_user_ids": [],
       "overall": {
         "grade": "C",
-        "score": 73.46
+        "score": 74.31
       },
       "effective_speed": {
         "grade": "A",
         "score": 100,
-        "distance": 24.934,
-        "duration": 4730
+        "distance": 26.99,
+        "duration": 5409
       },
       "excessive_idling": {
         "grade": "G",
-        "score": 99.45,
-        "duration": 4704
+        "score": 93.01,
+        "duration": 5031
       },
       "cruise_control": {
         "grade": null,
@@ -415,7 +415,7 @@
       },
       "harsh_cornering": {
         "grade": "C",
-        "score": 18.27,
+        "score": 15.97,
         "count": 1
       },
       "green_rpm": {
@@ -430,9 +430,9 @@
         "distance": null,
         "duration": null
       },
-      "distance_gps": 24.934,
+      "distance_gps": 26.99,
       "distance_can": null,
-      "driving_duration": 4730,
+      "driving_duration": 5409,
       "excessive_idling_pto_duration": null,
       "fuel_avg_consumption": null,
       "fuel_avg_consumption_measure": "kWh/100km",
@@ -442,9 +442,9 @@
       "fuel_consumption_can": null,
       "excessive_idling_consumption_can": null,
       "pto_idle_fuel_consumption_can": null,
-      "stop_count": 6,
-      "stop_duration": 47703,
-      "avg_speed": 18.98
+      "stop_count": 7,
+      "stop_duration": 47741,
+      "avg_speed": 17.96
     },
     {
       "unit_id": 821509,
@@ -591,7 +591,7 @@
       "excessive_idling_consumption_can": null,
       "pto_idle_fuel_consumption_can": null,
       "stop_count": 11,
-      "stop_duration": 35705,
+      "stop_duration": 37428,
       "avg_speed": 18.33
     },
     {

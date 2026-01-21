@@ -1,0 +1,11 @@
+{
+  "date":1768953600000,
+  "pattern":"HEALTHY",
+  "stats":{
+    "total":9,
+    "critical":0,
+    "warning":0,
+    "ok":9,
+    "persistent":0
+  }
+}

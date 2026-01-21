@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import date
 
+from src.reporting.weekly_report_builder import build_weekly_report
 from src.models.risk_persistence import run_risk_persistence
 from src.models.isolation_forest import run_isolation_forest
 from src.transform.parse_driver_behaviour import parse_driver_behaviour
@@ -57,7 +58,15 @@ def main():
 
     print(f"[OK] Weekly risk report generated at {risk_report_path}")
 
-    
+    weekly_report = build_weekly_report(
+        risk_report_path=risk_report_path,
+        output_dir="data/reports/weekly",
+        run_date=run_date,
+    )
+
+    print(f"[OK] Weekly report generated:")
+    print(f" - Text: {weekly_report['text']}")
+    print(f" - JSON: {weekly_report['json']}")
 
 
 if __name__ == "__main__":
