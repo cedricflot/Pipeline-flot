@@ -1,0 +1,23 @@
+{
+  "fleet_overview":{
+    "total_vehicles":11,
+    "risk_distribution":{
+      "ok":11,
+      "warning":0,
+      "critical":0
+    },
+    "risk_percentages":{
+      "ok":100.0,
+      "warning":0.0,
+      "critical":0.0
+    },
+    "fleet_health":"LOW_RISK"
+  },
+  "risk_concentration":{
+    "is_concentrated":true,
+    "top_vehicles_share":0.93
+  },
+  "priority_vehicles":[
+
+  ]
+}

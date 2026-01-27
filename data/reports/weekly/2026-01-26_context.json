@@ -1,0 +1,52 @@
+{
+  "fleet_size":13,
+  "risk_distribution":{
+    "OK":12,
+    "WARNING":1
+  },
+  "dominant_stress":{
+    "EXPLOITATION":13
+  },
+  "priority_vehicles":[
+    {
+      "vehicle_id":822389,
+      "risk_level":"WARNING",
+      "risk_score":2.1048390015,
+      "dominant_stress":"EXPLOITATION",
+      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
+      "consecutive_days_anomaly":3
+    },
+    {
+      "vehicle_id":795852,
+      "risk_level":"OK",
+      "risk_score":0.7168485814,
+      "dominant_stress":"EXPLOITATION",
+      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
+      "consecutive_days_anomaly":1
+    },
+    {
+      "vehicle_id":822292,
+      "risk_level":"OK",
+      "risk_score":0.7118960796,
+      "dominant_stress":"EXPLOITATION",
+      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
+      "consecutive_days_anomaly":1
+    },
+    {
+      "vehicle_id":795860,
+      "risk_level":"OK",
+      "risk_score":0.7069098692,
+      "dominant_stress":"EXPLOITATION",
+      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
+      "consecutive_days_anomaly":1
+    },
+    {
+      "vehicle_id":822588,
+      "risk_level":"OK",
+      "risk_score":0.0331069401,
+      "dominant_stress":"EXPLOITATION",
+      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
+      "consecutive_days_anomaly":0
+    }
+  ]
+}

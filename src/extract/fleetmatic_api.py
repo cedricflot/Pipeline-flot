@@ -55,7 +55,7 @@ class FleetmaticClient:
         )
 
         params = {
-            "units_ids": units_ids,   # ⚠️ aligné avec Postman
+            "units_ids": units_ids,   
             "date_from": date_from,
             "date_till": date_till,
         }

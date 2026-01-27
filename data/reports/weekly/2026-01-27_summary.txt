@@ -1,0 +1,19 @@
+RAPPORT HEBDOMADAIRE – INTELLIGENCE OPÉRATIONNELLE
+
+Flotte analysée : 13 véhicules
+
+Répartition du risque :
+- OK: 12
+- WARNING: 1
+
+Stress opérationnels dominants observés :
+- EXPLOITATION: 13 véhicules
+
+Véhicules prioritaires :
+- 822389 | WARNING | Conditions d’utilisation dégradées (arrêts prolongés, faible vitesse) | 3 jours consécutifs
+- 821540 | OK | Conditions d’utilisation dégradées (arrêts prolongés, faible vitesse) | 1 jours consécutifs
+- 795852 | OK | Conditions d’utilisation dégradées (arrêts prolongés, faible vitesse) | 1 jours consécutifs
+- 822292 | OK | Conditions d’utilisation dégradées (arrêts prolongés, faible vitesse) | 1 jours consécutifs
+- 795860 | OK | Conditions d’utilisation dégradées (arrêts prolongés, faible vitesse) | 1 jours consécutifs
+
+Recommandation : prioriser une analyse ciblée des véhicules CRITICAL et surveiller l’évolution des stress dominants.
