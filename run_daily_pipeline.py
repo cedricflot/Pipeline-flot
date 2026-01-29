@@ -61,15 +61,16 @@ def main():
 
     print(f"[OK] Weekly risk report generated at {risk_report_path}")
 
-    weekly_report = build_weekly_report(
-        risk_report_path=risk_report_path,
-        output_dir="data/reports/weekly",
-        run_date=run_date,
+    weekly_report_path = build_weekly_report(
+        anomalies_daily_dir="data/analytics/anomalies_daily",
+        daily_metrics_dir="data/processed/daily_vehicle_metrics",
+        risk_reports_dir="data/processed/risk_reports",
+        output_json_path=f"data/reports/weekly/{run_date}_weekly_report.json",
+        window_days=7,
+        top_k=10,
     )
 
-    print(f"[OK] Weekly report generated:")
-    print(f" - Text: {weekly_report['text']}")
-    print(f" - JSON: {weekly_report['json']}")
+    print(f"[OK] Weekly report generated: {weekly_report_path}")
 
 
 if __name__ == "__main__":

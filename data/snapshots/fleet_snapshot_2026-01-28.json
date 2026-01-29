@@ -1,0 +1,51 @@
+{
+  "meta":{
+    "snapshot_date":1769558400000,
+    "period_days":7,
+    "generated_at":"2026-01-28T10:21:28.199252Z",
+    "pipeline_version":"1.0.0"
+  },
+  "fleet_overview":{
+    "total_vehicles":13,
+    "risk_distribution":{
+      "ok":12,
+      "warning":1,
+      "critical":0
+    },
+    "risk_percentages":{
+      "ok":92.3,
+      "warning":7.7,
+      "critical":0.0
+    },
+    "fleet_health":"LOW_RISK",
+    "trend_vs_last_week":"UNKNOWN"
+  },
+  "risk_concentration":{
+    "is_concentrated":false,
+    "top_vehicles_share_of_risk":0.49
+  },
+  "priority_vehicles":[
+    {
+      "vehicle_id":822389,
+      "risk_level":"WARNING",
+      "risk_score":2.11,
+      "anomaly_days_7d":3,
+      "consecutive_days_anomaly":3,
+      "dominant_stress_factors":[
+
+      ],
+      "operational_interpretation":[
+
+      ],
+      "recommended_action":"Surveillance renforc\u00e9e"
+    }
+  ],
+  "fleet_insights":{
+    "main_patterns":[
+
+    ],
+    "alerts":[
+      "Certains v\u00e9hicules pr\u00e9sentent des anomalies persistantes sur plusieurs jours"
+    ]
+  }
+}
