@@ -9,7 +9,7 @@ import Vehicles from "./pages/Vehicles";
 import Trends from "./pages/Trends";
 import Weekly from "./pages/Weekly";
 
-import "./styles/variables.css";
+import "./index.css";
 
 const router = createBrowserRouter([
   {

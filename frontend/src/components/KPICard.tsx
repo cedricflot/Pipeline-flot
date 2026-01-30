@@ -1,15 +1,27 @@
 type Props = {
   title: string;
   value: string | number;
-  subtitle?: string;
+  variant?: "ok" | "warning" | "critical" | "neutral";
 };
 
-export default function KpiCard({ title, value, subtitle }: Props) {
+const variantStyles = {
+  ok: "border-l-green-500",
+  warning: "border-l-yellow-500",
+  critical: "border-l-red-500",
+  neutral: "border-l-blue-500",
+};
+
+export default function KpiCard({
+  title,
+  value,
+  variant = "neutral",
+}: Props) {
   return (
-    <div className="kpi-card">
-      <h4>{title}</h4>
-      <h2>{value}</h2>
-      {subtitle && <p>{subtitle}</p>}
+    <div
+      className={`bg-white rounded-xl p-5 shadow border-l-4 ${variantStyles[variant]}`}
+    >
+      <p className="text-sm text-slate-500 mb-1">{title}</p>
+      <p className="text-3xl font-semibold">{value}</p>
     </div>
   );
 }

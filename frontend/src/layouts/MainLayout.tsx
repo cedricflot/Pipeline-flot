@@ -1,15 +1,13 @@
-// src/layouts/MainLayout.tsx
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import "../styles/layout.css";
 
 export default function MainLayout() {
   return (
-    <div className="layout">
+    <div className="flex h-screen">
       <Navbar />
-      <div className="content">
+      <main className="flex-1 overflow-y-auto p-6">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 }
