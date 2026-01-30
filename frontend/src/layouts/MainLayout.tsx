@@ -1,10 +1,15 @@
+// src/layouts/MainLayout.tsx
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import "../styles/layout.css";
 
-export default function MainLayout({ children }) {
+export default function MainLayout() {
   return (
-    <div className="min-h-screen bg-slate-100">
+    <div className="layout">
       <Navbar />
-      <main className="p-8">{children}</main>
+      <div className="content">
+        <Outlet />
+      </div>
     </div>
   );
 }

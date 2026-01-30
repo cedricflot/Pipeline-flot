@@ -1,25 +1,33 @@
 {
-  "fleet_size":13,
+  "fleet_size":14,
   "risk_distribution":{
-    "OK":12,
+    "OK":13,
     "WARNING":1
   },
   "dominant_stress":{
-    "EXPLOITATION":13
+    "EXPLOITATION":14
   },
   "priority_vehicles":[
     {
       "vehicle_id":822389,
       "risk_level":"WARNING",
-      "risk_score":2.1008709009,
+      "risk_score":1.9092615047,
       "dominant_stress":"EXPLOITATION",
       "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
-      "consecutive_days_anomaly":3
+      "consecutive_days_anomaly":2
     },
     {
-      "vehicle_id":821540,
+      "vehicle_id":795860,
       "risk_level":"OK",
-      "risk_score":0.715966929,
+      "risk_score":1.4044684023,
+      "dominant_stress":"EXPLOITATION",
+      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
+      "consecutive_days_anomaly":2
+    },
+    {
+      "vehicle_id":822292,
+      "risk_level":"OK",
+      "risk_score":0.7208964118,
       "dominant_stress":"EXPLOITATION",
       "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
       "consecutive_days_anomaly":1
@@ -27,23 +35,15 @@
     {
       "vehicle_id":795852,
       "risk_level":"OK",
-      "risk_score":0.7145714847,
+      "risk_score":0.7167173069,
       "dominant_stress":"EXPLOITATION",
       "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
       "consecutive_days_anomaly":1
     },
     {
-      "vehicle_id":822292,
+      "vehicle_id":821937,
       "risk_level":"OK",
-      "risk_score":0.7122037136,
-      "dominant_stress":"EXPLOITATION",
-      "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
-      "consecutive_days_anomaly":1
-    },
-    {
-      "vehicle_id":795860,
-      "risk_level":"OK",
-      "risk_score":0.7069098692,
+      "risk_score":0.7145234212,
       "dominant_stress":"EXPLOITATION",
       "interpretation":"Conditions d\u2019utilisation d\u00e9grad\u00e9es (arr\u00eats prolong\u00e9s, faible vitesse)",
       "consecutive_days_anomaly":1

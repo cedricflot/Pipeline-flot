@@ -1,4 +1,5 @@
 import type { VehicleRisk } from "../types/WeeklyReport";
+import "./layout.css";
 
 export default function VehiclesTable({ vehicles }: { vehicles: VehicleRisk[] }) {
   return (
@@ -9,7 +10,7 @@ export default function VehiclesTable({ vehicles }: { vehicles: VehicleRisk[] })
           <th>Vehicle</th>
           <th>Risk</th>
           <th>Score</th>
-          <th>Stress</th>
+          <th>Main stress</th>
         </tr>
       </thead>
       <tbody>
@@ -17,7 +18,11 @@ export default function VehiclesTable({ vehicles }: { vehicles: VehicleRisk[] })
           <tr key={v.vehicle_id}>
             <td>{v.rank}</td>
             <td>{v.vehicle_id}</td>
-            <td>{v.risk_level}</td>
+            <td>
+              <span className={`badge ${v.risk_level.toLowerCase()}`}>
+                {v.risk_level}
+              </span>
+            </td>
             <td>{v.risk_score}</td>
             <td>{v.dominant_stress.join(", ")}</td>
           </tr>

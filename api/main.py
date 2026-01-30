@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes.weekly_report import router as weekly_router
+from routes.weekly_report import router as weekly_router
 
 app = FastAPI(
     title="Fleet Operational Risk API",

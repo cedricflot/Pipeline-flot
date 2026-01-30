@@ -1,21 +1,25 @@
-import  { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../styles/navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="bg-flotBlue text-white px-8 py-4 flex gap-6">
-      <span className="font-bold">Flot</span>
+    <nav className="navbar">
+      <h1>FLOT</h1>
 
-      <NavLink to="/" className="hover:text-flotGreen">
+      <NavLink to="/" end>
         Dashboard
       </NavLink>
-      <NavLink to="/vehicles" className="hover:text-flotGreen">
-        Vehicles at risk
+
+      <NavLink to="/vehicles">
+        Vehicles at Risk
       </NavLink>
-      <NavLink to="/trends" className="hover:text-flotGreen">
+
+      <NavLink to="/trends">
         Trends
       </NavLink>
-      <NavLink to="/weekly" className="hover:text-flotGreen">
-        Weekly report
+
+      <NavLink to="/weekly">
+        Weekly Report
       </NavLink>
     </nav>
   );

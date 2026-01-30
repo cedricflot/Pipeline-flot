@@ -4,7 +4,7 @@ import json
 
 router = APIRouter()
 
-WEEKLY_REPORTS_DIR = Path("data/reports/weekly")
+WEEKLY_REPORTS_DIR = Path("../data/reports/weekly")
 
 
 @router.get("/weekly-report/latest")

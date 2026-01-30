@@ -1,0 +1,388 @@
+{
+  "data": [
+    {
+      "unit_id": 821937,
+      "title": "88093WWCI01",
+      "driven_user_ids": [
+        890936
+      ],
+      "overall": {
+        "grade": "A",
+        "score": 93.02
+      },
+      "effective_speed": {
+        "grade": "A",
+        "score": 100,
+        "distance": 41.238,
+        "duration": 4336
+      },
+      "excessive_idling": {
+        "grade": "A",
+        "score": null,
+        "duration": null
+      },
+      "cruise_control": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "coasting": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "harsh_braking": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_acceleration": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_cornering": {
+        "grade": "C",
+        "score": 19.93,
+        "count": 1
+      },
+      "green_rpm": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "speeding": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "distance_gps": 41.238,
+      "distance_can": 10704,
+      "driving_duration": 4336,
+      "excessive_idling_pto_duration": null,
+      "fuel_avg_consumption": null,
+      "fuel_avg_consumption_measure": "kWh/100km",
+      "fuel_avg_consumption_by_norm": 106,
+      "fuel_avg_consumption_ratio": null,
+      "fuel_consumption": null,
+      "fuel_consumption_can": null,
+      "excessive_idling_consumption_can": null,
+      "pto_idle_fuel_consumption_can": null,
+      "stop_count": 1,
+      "stop_duration": null,
+      "avg_speed": 34.24
+    },
+    {
+      "unit_id": 821540,
+      "title": "88097WWCI01",
+      "driven_user_ids": [
+        890943
+      ],
+      "overall": {
+        "grade": "A",
+        "score": 91.85
+      },
+      "effective_speed": {
+        "grade": "A",
+        "score": 98.43,
+        "distance": 22.106,
+        "duration": 2063
+      },
+      "excessive_idling": {
+        "grade": "C",
+        "score": 6.11,
+        "duration": 128
+      },
+      "cruise_control": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "coasting": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "harsh_braking": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_acceleration": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_cornering": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "green_rpm": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "speeding": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "distance_gps": 23.033,
+      "distance_can": 5924,
+      "driving_duration": 2096,
+      "excessive_idling_pto_duration": null,
+      "fuel_avg_consumption": null,
+      "fuel_avg_consumption_measure": "kWh/100km",
+      "fuel_avg_consumption_by_norm": 10.6,
+      "fuel_avg_consumption_ratio": null,
+      "fuel_consumption": null,
+      "fuel_consumption_can": null,
+      "excessive_idling_consumption_can": null,
+      "pto_idle_fuel_consumption_can": null,
+      "stop_count": 2,
+      "stop_duration": 201,
+      "avg_speed": 39.56
+    },
+    {
+      "unit_id": 822333,
+      "title": "88100WWCI01",
+      "driven_user_ids": [],
+      "overall": {
+        "grade": "A",
+        "score": 93.03
+      },
+      "effective_speed": {
+        "grade": "A",
+        "score": 100,
+        "distance": 18.372,
+        "duration": 2097
+      },
+      "excessive_idling": {
+        "grade": "C",
+        "score": 6.63,
+        "duration": 139
+      },
+      "cruise_control": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "coasting": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "harsh_braking": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_acceleration": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_cornering": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "green_rpm": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "speeding": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "distance_gps": 18.372,
+      "distance_can": 4736,
+      "driving_duration": 2097,
+      "excessive_idling_pto_duration": null,
+      "fuel_avg_consumption": null,
+      "fuel_avg_consumption_measure": "kWh/100km",
+      "fuel_avg_consumption_by_norm": 10.8,
+      "fuel_avg_consumption_ratio": null,
+      "fuel_consumption": null,
+      "fuel_consumption_can": null,
+      "excessive_idling_consumption_can": null,
+      "pto_idle_fuel_consumption_can": null,
+      "stop_count": 3,
+      "stop_duration": 924,
+      "avg_speed": 31.54
+    },
+    {
+      "unit_id": 822292,
+      "title": "88101WWCI01",
+      "driven_user_ids": [
+        890932
+      ],
+      "overall": {
+        "grade": "B",
+        "score": 83.46
+      },
+      "effective_speed": {
+        "grade": "A",
+        "score": 100,
+        "distance": 20.732,
+        "duration": 2905
+      },
+      "excessive_idling": {
+        "grade": "F",
+        "score": 28.47,
+        "duration": 827
+      },
+      "cruise_control": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "coasting": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "harsh_braking": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_acceleration": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_cornering": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "green_rpm": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "speeding": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "distance_gps": 20.732,
+      "distance_can": 9076,
+      "driving_duration": 2905,
+      "excessive_idling_pto_duration": null,
+      "fuel_avg_consumption": null,
+      "fuel_avg_consumption_measure": "kWh/100km",
+      "fuel_avg_consumption_by_norm": 10.8,
+      "fuel_avg_consumption_ratio": null,
+      "fuel_consumption": null,
+      "fuel_consumption_can": null,
+      "excessive_idling_consumption_can": null,
+      "pto_idle_fuel_consumption_can": null,
+      "stop_count": 5,
+      "stop_duration": 1124,
+      "avg_speed": 25.69
+    },
+    {
+      "unit_id": 822389,
+      "title": "88103WWCI01",
+      "driven_user_ids": [
+        890944
+      ],
+      "overall": {
+        "grade": "B",
+        "score": 86.69
+      },
+      "effective_speed": {
+        "grade": "A",
+        "score": 100,
+        "distance": 16.337,
+        "duration": 1909
+      },
+      "excessive_idling": {
+        "grade": "A",
+        "score": null,
+        "duration": null
+      },
+      "cruise_control": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "coasting": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "harsh_braking": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_acceleration": {
+        "grade": "A",
+        "score": null,
+        "count": null
+      },
+      "harsh_cornering": {
+        "grade": "E",
+        "score": 45.26,
+        "count": 1
+      },
+      "green_rpm": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "speeding": {
+        "grade": null,
+        "score": null,
+        "distance": null,
+        "duration": null
+      },
+      "distance_gps": 16.337,
+      "distance_can": 11696,
+      "driving_duration": 1909,
+      "excessive_idling_pto_duration": null,
+      "fuel_avg_consumption": null,
+      "fuel_avg_consumption_measure": "kWh/100km",
+      "fuel_avg_consumption_by_norm": 0,
+      "fuel_avg_consumption_ratio": null,
+      "fuel_consumption": null,
+      "fuel_consumption_can": null,
+      "excessive_idling_consumption_can": null,
+      "pto_idle_fuel_consumption_can": null,
+      "stop_count": 2,
+      "stop_duration": 161,
+      "avg_speed": 30.81
+    }
+  ],
+  "_meta": {
+    "total": 5,
+    "totalPages": 1,
+    "perPage": 1000,
+    "page": 1
+  }
+}

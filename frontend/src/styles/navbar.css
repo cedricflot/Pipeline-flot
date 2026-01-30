@@ -1,0 +1,22 @@
+.navbar {
+    width: 240px;
+    background: var(--bg-panel);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar h1 {
+    color: var(--accent-green);
+    margin-bottom: 30px;
+  }
+  
+  .navbar a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .navbar a.active {
+    color: var(--text-primary);
+  }
